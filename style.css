@@ -1,0 +1,131 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+/* - Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+*{
+    margin: 0;padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+}
+.flex{ 
+    width: 43.9%;
+    height: 70%;
+    display: flex; 
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+} 
+.box{
+    width: 50%;
+    height: 100%; 
+    padding: 1.89em;
+    box-sizing: border-box;
+}
+.img{
+    width: 50%;height: 100%;
+    border-radius: 15px 0 0 15px;
+
+}
+.img2{
+    display: none;
+}
+.perfume{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    letter-spacing: 0.388em; 
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 0.7em;
+}
+.head{
+    font-family: 'Fraunces', serif; 
+    font-size: 32px;
+    padding-bottom: 1em;
+}
+.para{
+    font-family: 'Montserrat', sans-serif; 
+    color: hsl(228, 12%, 48%);
+    /* letter-spacing: -0.037em; */
+    font-size: 14px;
+    padding-bottom: 1em;
+    
+}
+.price1{
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    color : hsl(158, 36%, 37%);
+    padding-right: 5px;
+}
+.price2{
+    display: inline-block;
+
+    font-family: 'Fraunces', serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    text-decoration: line-through; 
+}
+.cart{
+    height: 7.8vh;
+    width: 100%; 
+    background-color : hsl(158, 36%, 37%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+.add{
+    font-family: 'Montserrat', sans-serif; 
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    padding-left: 0.6em;
+} 
+.cart-icon{
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    
+}
+.padding{
+    padding-bottom: 1em;
+}
+.main{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width : 375px) {
+    .flex{ 
+        width: 90%;
+        height: 95%;    
+        flex-direction: column;
+    } 
+    .img{
+        display: none;
+    }
+    .img2{
+        display: inline;
+        height: 39%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    .box{
+        width: 100%;
+        height: 61%; 
+    }  
+    .head{
+        font-size: 31px;
+        padding-bottom: 0.5em;
+    }  
+}
